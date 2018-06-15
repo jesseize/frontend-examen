@@ -1,0 +1,15 @@
+/* stylelint-disable-next-line block-no-empty */
+:local {
+  .mainHeader {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .logo {
+    margin: 0 auto;
+    width: 125px;
+    padding: 1rem;
+  }
+}
