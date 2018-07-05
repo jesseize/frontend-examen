@@ -1,15 +1,52 @@
 /* stylelint-disable-next-line block-no-empty */
 :local {
   .mainHeader {
-    display: flex;
-    flex-direction: row;
-    width: 260px;
-    margin: 0 auto;
-    justify-content: space-between;
+    height: 45rem;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
   }
   .logo {
     margin: 0 auto;
-    width: 125px;
+    width: 175px;
     padding: 1rem;
+    @media (max-width: 400px) {
+      width: 145px;
+    }
+  }
+  .branding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: inherit;
+    width: 35rem;
+    margin: 0 auto;
+    z-index: zindex($zLayout, top);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 400px) {
+      width: 30rem;
+    }
+  }
+  .background {
+    background-image: url('https://www.ma-web.nl/media/filer_public_thumbnails/filer_public/c7/b0/c7b06975-73a5-4678-b76d-dd89bee581cf/visie_en_missie.jpg__2018x904_q85_box-0,0,1313,637_crop_subsampling-2_upscale.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 45rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: zindex($zLayout, bottom);
+  }
+  .overlay {
+    height: 45rem;
+    width: 100%;
+    background-color: rgba(black, 0.9);
+    position: absolute;
+    top: 0;
+    z-index: zindex($zLayout, middle);
   }
 }

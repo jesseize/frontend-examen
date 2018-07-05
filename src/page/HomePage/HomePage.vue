@@ -5,5 +5,6 @@
 	<div :class="$style.wrapper">
     <MainHeader />
     <MainForm />
+    <MainFooter />
 	</div>
 </template>
